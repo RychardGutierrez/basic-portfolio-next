@@ -1,7 +1,7 @@
 import Footer from './components/footer';
 import Header from './components/header';
 import './global.css';
-import { aboutMeData, pages } from '../data/fakeData';
+import { aboutMeData, pages, contactMeLinks } from '../data/fakeData';
 
 export const metadata = {
   title: 'Portafolio',
@@ -18,7 +18,7 @@ export default function RootLayout({
       <body>
         <Header aboutMeData={aboutMeData} pages={pages} />
         {children}
-        <Footer />
+        <Footer contactMeLinks={contactMeLinks} />
       </body>
     </html>
   );
